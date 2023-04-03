@@ -22,7 +22,7 @@ const Article = ({ img, name, para, btn, type }) => {
   }
 
   return (
-    <article className="main">
+    <article className="main" aria-label="Car item">
       <div className={articleClass}>
         <img src={img} alt={name} className="main__content-img" />
         <h2 className="main__content-title">{name}</h2>
@@ -32,7 +32,7 @@ const Article = ({ img, name, para, btn, type }) => {
             {readMore ? "Show less" : "Read more"}
           </button>
         </p>
-        <button className={buttonClass}>{btn}</button>
+        <button className={buttonClass} aria-label="Learn more">{btn}</button>
       </div>
     </article>
   );
